@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img
+          class="header__logo"
+          src="/images/Logo.png"
+          alt="Логотип ToDo List"
+        />
+      </div>
+      <div class="nav">
+        <nav class="nav__menu">
+          <div class="nav__list">
+            <div class="nav__functional">
+              <button class="personal nav__item" id="personal">Personal</button>
+              <span class="personal__span"></span>
+            </div>
+            <div>
+              <button class="professional nav__item" id="professional">Professional</button>
+              <span class="professional__span"></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__content">
+        <form action="" class="main__form">
+          <input
+            type="text"
+            class="main__input"
+            placeholder="What do you need to do?"
+          />
+          <button class="main__button">ADD</button>
+        </form>
+      </div>
+      <div class="list">
+        <div class="list__task">
+        </div>
+        <div class="clear">
+          <button class="clear__complited">
+            <svg width="28" height="34">
+              <use href="./symbol-defs.svg#icon-clear"></use>
+            </svg>
+            <p class="clear__text">Clear Complited</p>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
